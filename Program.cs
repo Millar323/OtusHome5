@@ -14,7 +14,7 @@ internal class Program
         };
 
         var maxElement = Max.GetMax(numbers, (Product) => Product.Id);
-        Console.WriteLine(maxElement);
+        Console.WriteLine("Максимальный элемент:  " + maxElement.Id);
 
         var file = new FileSearcher();
         file.FileFound += (_, fileArgs) => Console.WriteLine("Найденный файл: " + fileArgs); ;
